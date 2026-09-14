@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: silver
+    schema: silver
+    description: "Silver layer tables, cleansed and validated from Bronze ingestion."
+    tables:
+      - name: orders
+        description: "Cleansed orders from NP Core Silver layer"
+        loaded_at_field: _silver_cleansed_at
+        freshness:
+          warn_after: {count: 25, period: hour}
+          error_after: {count: 49, period: hour}
+      - name: customers
+        description: "Cleansed customer records. Only customer_id and email confirmed per Dmitri handover (10 Jul 2026) - full attribute schema not yet documented."
+      - name: stores
+        description: "Cleansed store records. Only store_id confirmed - full attribute schema not yet documented."

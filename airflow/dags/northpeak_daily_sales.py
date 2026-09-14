@@ -19,6 +19,7 @@ from airflow.operators.python import PythonOperator
 from airflow.operators.bash import BashOperator
 from airflow.utils.dates import days_ago
 import logging
+from airflow.models.baseoperator import cross_downstream
 
 log = logging.getLogger("northpeak.airflow")
 
@@ -165,7 +166,8 @@ conn.close()
     )
 
     # ── Task dependencies ────────────────────────────────────────
-    [check_np_core, check_rewardsco_api] >> [bronze_orders, bronze_customers, bronze_inventory, bronze_loyalty]
+    # [check_np_core, check_rewardsco_api] >> [bronze_orders, bronze_customers, bronze_inventory, bronze_loyalty]
+    cross_downstream([check_np_core, check_rewardsco_api], [bronze_orders, bronze_customers, bronze_inventory, bronze_loyalty])
     [bronze_orders, bronze_customers, bronze_inventory, bronze_loyalty] >> data_quality_check
     data_quality_check >> [silver_orders, silver_inventory]
     [silver_orders, silver_inventory] >> dbt_run

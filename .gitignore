@@ -47,3 +47,7 @@ quality/great_expectations/uncommitted/
 # OS
 .DS_Store
 Thumbs.db
+
+# Airflow runtime (local only)
+airflow/logs/
+airflow/plugins/

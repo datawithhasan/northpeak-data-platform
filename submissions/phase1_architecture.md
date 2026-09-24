@@ -1,8 +1,8 @@
 # Phase 1 Submission: Platform Architecture and Sprint 0
 
-**Submission**
-**Sprint 0: 24-27 September 2026**
-**Phase:** Architecture and Onboarding
+**Submission
+Sprint 0: 24-27 September 2026
+Phase: Architecture and Onboarding***
 
 ---
 
@@ -132,28 +132,14 @@ Reference: See `/architecture/cloud-mapping/local-to-azure-databricks.md`
 
 The core design does not change in production — the same medallion layers, the same dbt models, the same Airflow DAGs, and the same PySpark transformation code would run largely unmodified on Azure/Databricks. What changes is scale, infrastructure management, and governance enforcement, not application logic.
 
-**Compute and storage.** Local PySpark runs single-machine; Databricks Runtime adds auto-scaling clusters and the Photon engine, so the same code processes far larger volumes without a rewrite. Local Parquet files would move to Azure Data Lake Storage Gen2, gaining encryption at rest and access control through Azure Active Directory. DuckDB, used locally as a stand-in warehouse, comfortably handles gigabyte-scale data; a real deployment would move to Snowflake or Azure Synapse Analytics for petabyte-scale query performance.
+**Compute and storage:** Local PySpark runs single-machine; Databricks Runtime adds auto-scaling clusters and the Photon engine, so the same code processes far larger volumes without a rewrite. Local Parquet files would move to Azure Data Lake Storage Gen2, gaining encryption at rest and access control through Azure Active Directory. DuckDB, used locally as a stand-in warehouse, comfortably handles gigabyte-scale data; a real deployment would move to Snowflake or Azure Synapse Analytics for petabyte-scale query performance.
 
-**Orchestration.** The DAG files themselves are portable as-is — the same Python code deploys to Databricks Workflows, AWS MWAA, or Cloud Composer. What disappears in production is the operational burden of running and maintaining Airflow's own infrastructure (the Docker containers, scheduler, metadata database); a managed orchestrator removes that entirely.
+**Orchestration:** The DAG files themselves are portable as-is — the same Python code deploys to Databricks Workflows, AWS MWAA, or Cloud Composer. What disappears in production is the operational burden of running and maintaining Airflow's own infrastructure (the Docker containers, scheduler, metadata database); a managed orchestrator removes that entirely.
 
-**Transformation and data quality.** dbt Core's model logic is warehouse-agnostic — migrating from DuckDB to Snowflake or Databricks SQL is a one-line change in `profiles.yml`, not a rewrite of any model. Great Expectations' YAML expectation suites are portable to enterprise equivalents like Monte Carlo or GE Cloud, which add ML-based anomaly detection and direct alerting (Slack/PagerDuty) on top of the same underlying checks already defined here.
+**Transformation and data quality:** dbt Core's model logic is warehouse-agnostic — migrating from DuckDB to Snowflake or Databricks SQL is a one-line change in `profiles.yml`, not a rewrite of any model. Great Expectations' YAML expectation suites are portable to enterprise equivalents like Monte Carlo or GE Cloud, which add ML-based anomaly detection and direct alerting (Slack/PagerDuty) on top of the same underlying checks already defined here.
 
-**Security and governance — the most consequential production change.** This is where local and enterprise diverge most, not because the design is wrong, but because production carries real regulatory weight: NP Financial's FCA-regulated data and real customer PII mean secrets can no longer live in a local `.env` file — they'd move to Azure Key Vault with managed identity, and access would be enforced programmatically through Azure RBAC and Unity Catalog rather than documented manually. Unity Catalog specifically enforces the YAML data contracts used here at the query level, rather than relying on convention and code review alone.
+**Security and governance — the most consequential production change:** This is where local and enterprise diverge most, not because the design is wrong, but because production carries real regulatory weight: NP Financial's FCA-regulated data and real customer PII mean secrets can no longer live in a local `.env` file — they'd move to Azure Key Vault with managed identity, and access would be enforced programmatically through Azure RBAC and Unity Catalog rather than documented manually. Unity Catalog specifically enforces the YAML data contracts used here at the query level, rather than relying on convention and code review alone.
 
 **Net effect:** the local build demonstrates the same architecture, the same code, and the same governance patterns an enterprise deployment uses — production mainly swaps self-managed infrastructure for managed equivalents and adds the regulatory-grade enforcement (encryption, RBAC, Key Vault) that real customer and financial data legally requires.
 
 ---
-*How would this architecture differ in a real enterprise deployment on Azure/Databricks?*
-
-Reference: See `/architecture/cloud-mapping/local-to-azure-databricks.md`
-
-[YOUR ANSWER HERE]
-
----
-
-## Evidence Required
-
-- [ ] ADR-001 committed to `/architecture/ADR/`
-- [ ] Cloud mapping doc reviewed and annotated
-- [ ] 3 user stories written above
-- [ ] GitHub repository URL: https://github.com/alain-Sortnext/northpeak-data-platform

@@ -2,7 +2,7 @@
 
 **Submission
 Sprint 0: 24-27 September 2026
-Phase: Architecture and Onboarding***
+Phase: Architecture and Onboarding**
 
 ---
 

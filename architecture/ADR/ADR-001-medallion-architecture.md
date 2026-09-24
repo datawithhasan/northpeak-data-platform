@@ -60,5 +60,3 @@ Implement the **Medallion Architecture** (Bronze / Silver / Gold) using PySpark,
 | Great Expectations | Monte Carlo / Acceldata |
 
 ---
-
-**Review Date:** 21 September 2026 (end of Sprint 4)

@@ -1,0 +1,151 @@
+product_id,sku,product_name,brand,category_l1,category_l2,category_l3,unit_of_measure,unit_price_gbp,is_active,supplier_id,created_at
+1,NP-SKU-00001,PepsiCo Organic Veg Mix,Nestle,Food,Fresh Produce,Vegetables,pack,24.94,True,19,2021-03-02
+2,NP-SKU-00002,PepsiCo Full Fat Milk,Nestle,Food,Dairy,Milk,bag,19.16,True,16,2020-05-28
+3,NP-SKU-00003,Danone Mature Cheddar,Kelloggs,Food,Dairy,Cheese,each,7.53,True,14,2020-06-16
+4,NP-SKU-00004,NorthPeak Own Brand White Loaf,PepsiCo,Food,Bakery,Bread,litre,1.41,True,1,2018-05-09
+5,NP-SKU-00005,NorthPeak Own Brand Croissant 4pk,P&G,Food,Bakery,Pastries,box,9.85,True,3,2019-12-20
+6,NP-SKU-00006,Coca-Cola Chicken Breast,NorthPeak Own Brand,Food,Meat,Poultry,pack,20.66,True,5,2023-06-04
+7,NP-SKU-00007,PepsiCo Beef Mince,Nestle,Food,Meat,Beef,each,18.48,True,15,2020-07-28
+8,NP-SKU-00008,Kelloggs Diet Cola 24pk,Danone,Drink,Soft Drinks,Cola,can,5.16,True,19,2020-11-22
+9,NP-SKU-00009,Reckitt Orange Juice 1L,Unilever,Drink,Soft Drinks,Juice,can,24.29,True,3,2022-10-07
+10,NP-SKU-00010,Nestle Lager 12pk,Heinz,Drink,Alcohol,Beer,bottle,14.04,True,7,2020-12-11
+11,NP-SKU-00011,P&G Sauvignon Blanc,P&G,Drink,Alcohol,Wine,each,2.57,True,8,2022-09-12
+12,NP-SKU-00012,Unilever Washing Powder,Coca-Cola,Household,Cleaning,Detergent,box,22.31,True,7,2024-07-06
+13,NP-SKU-00013,PepsiCo Bleach Spray,Unilever,Household,Cleaning,Bleach,each,5.28,True,15,2020-03-09
+14,NP-SKU-00014,P&G Anti-Dandruff Shampoo,Coca-Cola,Household,Personal Care,Shampoo,kg,0.96,True,8,2023-08-23
+15,NP-SKU-00015,NorthPeak Own Brand Fruit 6pk,P&G,Food,Fresh Produce,Fruit,can,19.65,True,18,2024-01-02
+16,NP-SKU-00016,Danone Organic Veg Mix,Kelloggs,Food,Fresh Produce,Vegetables,litre,14.44,True,9,2021-10-02
+17,NP-SKU-00017,PepsiCo Full Fat Milk,Nestle,Food,Dairy,Milk,bag,11.23,True,10,2018-08-09
+18,NP-SKU-00018,Coca-Cola Mature Cheddar,Unilever,Food,Dairy,Cheese,box,5.59,True,11,2018-03-08
+19,NP-SKU-00019,Danone White Loaf,Kelloggs,Food,Bakery,Bread,pack,4.5,True,18,2022-05-14
+20,NP-SKU-00020,P&G Croissant 4pk,Kelloggs,Food,Bakery,Pastries,litre,11.49,True,11,2023-03-07
+21,NP-SKU-00021,Coca-Cola Chicken Breast,PepsiCo,Food,Meat,Poultry,litre,15.78,True,8,2018-03-01
+22,NP-SKU-00022,PepsiCo Beef Mince,Kelloggs,Food,Meat,Beef,can,14.55,True,4,2019-04-01
+23,NP-SKU-00023,Coca-Cola Diet Cola 24pk,Unilever,Drink,Soft Drinks,Cola,each,5.33,True,14,2021-08-03
+24,NP-SKU-00024,Nestle Orange Juice 1L,P&G,Drink,Soft Drinks,Juice,bag,9.45,True,1,2021-07-05
+25,NP-SKU-00025,Reckitt Lager 12pk,NorthPeak Own Brand,Drink,Alcohol,Beer,bottle,18.9,True,11,2019-12-02
+26,NP-SKU-00026,PepsiCo Sauvignon Blanc,Heinz,Drink,Alcohol,Wine,bottle,5.66,True,3,2019-04-24
+27,NP-SKU-00027,NorthPeak Own Brand Washing Powder,Danone,Household,Cleaning,Detergent,box,20.49,True,6,2019-01-07
+28,NP-SKU-00028,Heinz Bleach Spray,PepsiCo,Household,Cleaning,Bleach,pack,3.61,True,10,2021-02-26
+29,NP-SKU-00029,NorthPeak Own Brand Anti-Dandruff Shampoo,Unilever,Household,Personal Care,Shampoo,kg,11.63,True,6,2019-11-26
+30,NP-SKU-00030,PepsiCo Fruit 6pk,Heinz,Food,Fresh Produce,Fruit,pack,22.09,True,2,2021-12-14
+31,NP-SKU-00031,Heinz Organic Veg Mix,Danone,Food,Fresh Produce,Vegetables,bag,18.38,True,4,2024-08-21
+32,NP-SKU-00032,Reckitt Full Fat Milk,Kelloggs,Food,Dairy,Milk,box,10.64,True,20,2024-10-28
+33,NP-SKU-00033,PepsiCo Mature Cheddar,Heinz,Food,Dairy,Cheese,pack,9.96,True,18,2019-09-28
+34,NP-SKU-00034,Reckitt White Loaf,PepsiCo,Food,Bakery,Bread,bag,15.91,True,11,2022-02-06
+35,NP-SKU-00035,PepsiCo Croissant 4pk,Kelloggs,Food,Bakery,Pastries,pack,20.17,True,19,2024-12-11
+36,NP-SKU-00036,P&G Chicken Breast,P&G,Food,Meat,Poultry,box,17.96,True,17,2023-12-05
+37,NP-SKU-00037,Coca-Cola Beef Mince,Reckitt,Food,Meat,Beef,each,15.87,True,15,2022-02-26
+38,NP-SKU-00038,PepsiCo Diet Cola 24pk,Nestle,Drink,Soft Drinks,Cola,litre,2.57,True,2,2018-09-15
+39,NP-SKU-00039,Danone Orange Juice 1L,Unilever,Drink,Soft Drinks,Juice,each,17.57,True,18,2021-12-20
+40,NP-SKU-00040,Unilever Lager 12pk,Nestle,Drink,Alcohol,Beer,bag,21.45,True,16,2020-12-02
+41,NP-SKU-00041,Coca-Cola Sauvignon Blanc,NorthPeak Own Brand,Drink,Alcohol,Wine,litre,9.14,True,19,2022-10-09
+42,NP-SKU-00042,Kelloggs Washing Powder,PepsiCo,Household,Cleaning,Detergent,bottle,18.51,True,4,2021-02-06
+43,NP-SKU-00043,PepsiCo Bleach Spray,PepsiCo,Household,Cleaning,Bleach,bag,23.66,True,9,2019-04-18
+44,NP-SKU-00044,Reckitt Anti-Dandruff Shampoo,PepsiCo,Household,Personal Care,Shampoo,litre,1.03,True,10,2019-03-04
+45,NP-SKU-00045,P&G Fruit 6pk,PepsiCo,Food,Fresh Produce,Fruit,can,17.14,True,9,2022-11-13
+46,NP-SKU-00046,Coca-Cola Organic Veg Mix,Coca-Cola,Food,Fresh Produce,Vegetables,pack,17.46,True,7,2019-05-10
+47,NP-SKU-00047,Heinz Full Fat Milk,Reckitt,Food,Dairy,Milk,pack,7.97,True,17,2021-09-20
+48,NP-SKU-00048,NorthPeak Own Brand Mature Cheddar,Kelloggs,Food,Dairy,Cheese,pack,7.14,True,1,2024-03-01
+49,NP-SKU-00049,Kelloggs White Loaf,NorthPeak Own Brand,Food,Bakery,Bread,can,19.27,True,12,2018-10-25
+50,NP-SKU-00050,Kelloggs Croissant 4pk,Coca-Cola,Food,Bakery,Pastries,bag,12.67,True,20,2023-03-13
+51,NP-SKU-00051,P&G Chicken Breast,Coca-Cola,Food,Meat,Poultry,litre,23.72,True,20,2023-06-14
+52,NP-SKU-00052,Coca-Cola Beef Mince,Heinz,Food,Meat,Beef,litre,11.58,True,16,2021-06-26
+53,NP-SKU-00053,PepsiCo Diet Cola 24pk,PepsiCo,Drink,Soft Drinks,Cola,bottle,14.4,True,1,2021-02-13
+54,NP-SKU-00054,Kelloggs Orange Juice 1L,Danone,Drink,Soft Drinks,Juice,kg,3.97,True,20,2019-01-21
+55,NP-SKU-00055,Kelloggs Lager 12pk,NorthPeak Own Brand,Drink,Alcohol,Beer,litre,4.2,True,10,2018-02-11
+56,NP-SKU-00056,P&G Sauvignon Blanc,Coca-Cola,Drink,Alcohol,Wine,pack,4.22,True,11,2020-11-23
+57,NP-SKU-00057,NorthPeak Own Brand Washing Powder,P&G,Household,Cleaning,Detergent,each,11.18,True,15,2023-12-26
+58,NP-SKU-00058,PepsiCo Bleach Spray,P&G,Household,Cleaning,Bleach,litre,20.75,True,10,2023-03-02
+59,NP-SKU-00059,P&G Anti-Dandruff Shampoo,P&G,Household,Personal Care,Shampoo,kg,8.71,True,9,2022-09-01
+60,NP-SKU-00060,Danone Fruit 6pk,Kelloggs,Food,Fresh Produce,Fruit,kg,5.27,True,4,2019-11-18
+61,NP-SKU-00061,Unilever Organic Veg Mix,Unilever,Food,Fresh Produce,Vegetables,box,14.56,True,8,2023-03-03
+62,NP-SKU-00062,Nestle Full Fat Milk,PepsiCo,Food,Dairy,Milk,litre,2.81,True,6,2024-02-12
+63,NP-SKU-00063,Heinz Mature Cheddar,Danone,Food,Dairy,Cheese,kg,17.93,True,18,2019-07-18
+64,NP-SKU-00064,P&G White Loaf,Danone,Food,Bakery,Bread,bag,24.79,True,10,2018-02-25
+65,NP-SKU-00065,NorthPeak Own Brand Croissant 4pk,Nestle,Food,Bakery,Pastries,bottle,6.92,True,18,2018-07-10
+66,NP-SKU-00066,Heinz Chicken Breast,PepsiCo,Food,Meat,Poultry,pack,1.54,True,13,2019-10-17
+67,NP-SKU-00067,Reckitt Beef Mince,Reckitt,Food,Meat,Beef,bag,6.49,True,11,2022-06-25
+68,NP-SKU-00068,P&G Diet Cola 24pk,P&G,Drink,Soft Drinks,Cola,box,23.67,True,13,2023-05-25
+69,NP-SKU-00069,Nestle Orange Juice 1L,NorthPeak Own Brand,Drink,Soft Drinks,Juice,can,18.24,True,7,2020-11-06
+70,NP-SKU-00070,Nestle Lager 12pk,NorthPeak Own Brand,Drink,Alcohol,Beer,litre,18.01,True,14,2024-03-06
+71,NP-SKU-00071,Nestle Sauvignon Blanc,Coca-Cola,Drink,Alcohol,Wine,litre,0.92,True,3,2018-05-06
+72,NP-SKU-00072,NorthPeak Own Brand Washing Powder,Heinz,Household,Cleaning,Detergent,each,20.0,True,4,2020-12-16
+73,NP-SKU-00073,Danone Bleach Spray,NorthPeak Own Brand,Household,Cleaning,Bleach,kg,2.71,True,20,2021-03-27
+74,NP-SKU-00074,P&G Anti-Dandruff Shampoo,NorthPeak Own Brand,Household,Personal Care,Shampoo,box,14.6,True,17,2018-11-06
+75,NP-SKU-00075,Danone Fruit 6pk,Coca-Cola,Food,Fresh Produce,Fruit,kg,18.52,True,1,2018-04-14
+76,NP-SKU-00076,P&G Organic Veg Mix,P&G,Food,Fresh Produce,Vegetables,pack,18.57,True,6,2023-01-02
+77,NP-SKU-00077,Unilever Full Fat Milk,Kelloggs,Food,Dairy,Milk,each,18.83,True,18,2020-04-18
+78,NP-SKU-00078,P&G Mature Cheddar,Coca-Cola,Food,Dairy,Cheese,kg,0.59,True,2,2020-03-09
+79,NP-SKU-00079,Coca-Cola White Loaf,Danone,Food,Bakery,Bread,each,13.97,True,1,2020-09-23
+80,NP-SKU-00080,PepsiCo Croissant 4pk,P&G,Food,Bakery,Pastries,litre,16.67,True,19,2024-10-02
+81,NP-SKU-00081,Unilever Chicken Breast,Reckitt,Food,Meat,Poultry,can,13.58,True,14,2019-08-25
+82,NP-SKU-00082,P&G Beef Mince,Coca-Cola,Food,Meat,Beef,each,4.84,True,18,2019-09-20
+83,NP-SKU-00083,P&G Diet Cola 24pk,Coca-Cola,Drink,Soft Drinks,Cola,each,20.46,True,14,2023-02-17
+84,NP-SKU-00084,Kelloggs Orange Juice 1L,Nestle,Drink,Soft Drinks,Juice,can,4.84,True,15,2018-04-14
+85,NP-SKU-00085,Danone Lager 12pk,Heinz,Drink,Alcohol,Beer,kg,0.52,True,3,2019-03-22
+86,NP-SKU-00086,Danone Sauvignon Blanc,PepsiCo,Drink,Alcohol,Wine,each,22.55,True,20,2019-02-22
+87,NP-SKU-00087,Danone Washing Powder,Danone,Household,Cleaning,Detergent,each,9.06,True,6,2021-12-20
+88,NP-SKU-00088,Nestle Bleach Spray,Danone,Household,Cleaning,Bleach,bag,8.47,True,1,2021-08-16
+89,NP-SKU-00089,P&G Anti-Dandruff Shampoo,Nestle,Household,Personal Care,Shampoo,pack,10.85,True,12,2024-10-06
+90,NP-SKU-00090,Unilever Fruit 6pk,Danone,Food,Fresh Produce,Fruit,kg,21.48,True,9,2019-02-20
+91,NP-SKU-00091,PepsiCo Organic Veg Mix,Reckitt,Food,Fresh Produce,Vegetables,bag,23.93,True,4,2021-09-23
+92,NP-SKU-00092,Nestle Full Fat Milk,Kelloggs,Food,Dairy,Milk,can,14.7,True,18,2023-04-18
+93,NP-SKU-00093,Heinz Mature Cheddar,Kelloggs,Food,Dairy,Cheese,bag,4.87,True,1,2023-12-05
+94,NP-SKU-00094,P&G White Loaf,P&G,Food,Bakery,Bread,bottle,17.55,True,13,2022-07-25
+95,NP-SKU-00095,PepsiCo Croissant 4pk,NorthPeak Own Brand,Food,Bakery,Pastries,bottle,14.58,True,4,2019-06-15
+96,NP-SKU-00096,Coca-Cola Chicken Breast,Heinz,Food,Meat,Poultry,litre,8.91,True,8,2022-05-22
+97,NP-SKU-00097,P&G Beef Mince,Unilever,Food,Meat,Beef,bag,18.59,True,5,2022-10-01
+98,NP-SKU-00098,Reckitt Diet Cola 24pk,Heinz,Drink,Soft Drinks,Cola,bag,4.0,True,20,2021-07-19
+99,NP-SKU-00099,Heinz Orange Juice 1L,Nestle,Drink,Soft Drinks,Juice,bag,14.57,True,13,2021-01-18
+100,NP-SKU-00100,Unilever Lager 12pk,Danone,Drink,Alcohol,Beer,bag,8.02,True,16,2020-09-12
+101,NP-SKU-00101,NorthPeak Own Brand Sauvignon Blanc,NorthPeak Own Brand,Drink,Alcohol,Wine,box,10.44,True,3,2022-04-26
+102,NP-SKU-00102,NorthPeak Own Brand Washing Powder,Danone,Household,Cleaning,Detergent,box,3.26,True,15,2019-05-27
+103,NP-SKU-00103,Reckitt Bleach Spray,Danone,Household,Cleaning,Bleach,bottle,5.55,True,19,2022-09-04
+104,NP-SKU-00104,P&G Anti-Dandruff Shampoo,Heinz,Household,Personal Care,Shampoo,pack,7.0,True,11,2018-10-06
+105,NP-SKU-00105,Danone Fruit 6pk,P&G,Food,Fresh Produce,Fruit,pack,8.5,True,6,2018-01-06
+106,NP-SKU-00106,P&G Organic Veg Mix,PepsiCo,Food,Fresh Produce,Vegetables,bag,1.46,True,13,2020-09-20
+107,NP-SKU-00107,Unilever Full Fat Milk,Unilever,Food,Dairy,Milk,litre,7.13,True,9,2020-09-04
+108,NP-SKU-00108,Coca-Cola Mature Cheddar,Unilever,Food,Dairy,Cheese,each,21.94,True,2,2020-08-10
+109,NP-SKU-00109,Danone White Loaf,Danone,Food,Bakery,Bread,each,15.66,True,16,2020-12-04
+110,NP-SKU-00110,Danone Croissant 4pk,Kelloggs,Food,Bakery,Pastries,can,24.61,True,8,2018-03-15
+111,NP-SKU-00111,Kelloggs Chicken Breast,Unilever,Food,Meat,Poultry,pack,0.52,True,2,2023-06-24
+112,NP-SKU-00112,P&G Beef Mince,P&G,Food,Meat,Beef,kg,15.01,True,20,2020-11-07
+113,NP-SKU-00113,Unilever Diet Cola 24pk,Kelloggs,Drink,Soft Drinks,Cola,can,7.67,True,18,2020-10-07
+114,NP-SKU-00114,Reckitt Orange Juice 1L,Danone,Drink,Soft Drinks,Juice,box,11.08,True,19,2018-09-25
+115,NP-SKU-00115,Reckitt Lager 12pk,Unilever,Drink,Alcohol,Beer,kg,13.51,True,6,2021-11-26
+116,NP-SKU-00116,Unilever Sauvignon Blanc,Unilever,Drink,Alcohol,Wine,kg,15.96,True,7,2021-06-23
+117,NP-SKU-00117,Nestle Washing Powder,Unilever,Household,Cleaning,Detergent,each,7.15,True,10,2020-05-05
+118,NP-SKU-00118,NorthPeak Own Brand Bleach Spray,NorthPeak Own Brand,Household,Cleaning,Bleach,pack,10.14,True,9,2023-06-14
+119,NP-SKU-00119,Danone Anti-Dandruff Shampoo,P&G,Household,Personal Care,Shampoo,bottle,4.54,True,2,2021-03-26
+120,NP-SKU-00120,PepsiCo Fruit 6pk,Nestle,Food,Fresh Produce,Fruit,bottle,22.8,True,20,2022-07-28
+121,NP-SKU-00121,Reckitt Organic Veg Mix,PepsiCo,Food,Fresh Produce,Vegetables,bottle,23.34,True,6,2019-03-04
+122,NP-SKU-00122,NorthPeak Own Brand Full Fat Milk,Unilever,Food,Dairy,Milk,bottle,6.28,True,10,2021-01-09
+123,NP-SKU-00123,Reckitt Mature Cheddar,Heinz,Food,Dairy,Cheese,bag,22.57,True,10,2022-05-22
+124,NP-SKU-00124,Kelloggs White Loaf,Kelloggs,Food,Bakery,Bread,each,15.22,True,11,2019-02-28
+125,NP-SKU-00125,Coca-Cola Croissant 4pk,Danone,Food,Bakery,Pastries,each,8.16,True,16,2024-02-05
+126,NP-SKU-00126,Heinz Chicken Breast,Kelloggs,Food,Meat,Poultry,bottle,5.84,True,6,2023-10-02
+127,NP-SKU-00127,Unilever Beef Mince,Coca-Cola,Food,Meat,Beef,can,3.63,True,6,2018-02-23
+128,NP-SKU-00128,Reckitt Diet Cola 24pk,Coca-Cola,Drink,Soft Drinks,Cola,litre,16.02,True,15,2021-03-14
+129,NP-SKU-00129,Heinz Orange Juice 1L,Danone,Drink,Soft Drinks,Juice,each,15.63,True,18,2020-12-22
+130,NP-SKU-00130,Kelloggs Lager 12pk,Danone,Drink,Alcohol,Beer,bottle,4.69,True,19,2023-05-06
+131,NP-SKU-00131,Kelloggs Sauvignon Blanc,PepsiCo,Drink,Alcohol,Wine,bottle,2.98,True,4,2022-06-16
+132,NP-SKU-00132,Kelloggs Washing Powder,NorthPeak Own Brand,Household,Cleaning,Detergent,kg,11.49,True,2,2020-01-17
+133,NP-SKU-00133,Unilever Bleach Spray,Kelloggs,Household,Cleaning,Bleach,box,15.18,True,9,2021-08-10
+134,NP-SKU-00134,Heinz Anti-Dandruff Shampoo,Reckitt,Household,Personal Care,Shampoo,each,19.23,True,7,2020-03-10
+135,NP-SKU-00135,Reckitt Fruit 6pk,Danone,Food,Fresh Produce,Fruit,box,3.25,True,15,2018-06-19
+136,NP-SKU-00136,Heinz Organic Veg Mix,NorthPeak Own Brand,Food,Fresh Produce,Vegetables,bag,5.39,True,10,2024-10-07
+137,NP-SKU-00137,Unilever Full Fat Milk,Kelloggs,Food,Dairy,Milk,each,12.46,True,18,2018-04-07
+138,NP-SKU-00138,Nestle Mature Cheddar,Danone,Food,Dairy,Cheese,each,10.82,True,3,2023-04-08
+139,NP-SKU-00139,Danone White Loaf,NorthPeak Own Brand,Food,Bakery,Bread,litre,10.96,True,2,2022-08-17
+140,NP-SKU-00140,Danone Croissant 4pk,PepsiCo,Food,Bakery,Pastries,kg,9.14,True,6,2021-09-16
+141,NP-SKU-00141,Coca-Cola Chicken Breast,Unilever,Food,Meat,Poultry,box,20.77,True,14,2019-06-22
+142,NP-SKU-00142,Nestle Beef Mince,Kelloggs,Food,Meat,Beef,litre,3.49,True,10,2021-06-27
+143,NP-SKU-00143,Coca-Cola Diet Cola 24pk,Kelloggs,Drink,Soft Drinks,Cola,each,12.32,True,17,2018-02-17
+144,NP-SKU-00144,NorthPeak Own Brand Orange Juice 1L,Nestle,Drink,Soft Drinks,Juice,bottle,10.91,True,16,2019-05-09
+145,NP-SKU-00145,P&G Lager 12pk,Reckitt,Drink,Alcohol,Beer,kg,18.51,True,15,2023-07-06
+146,NP-SKU-00146,NorthPeak Own Brand Sauvignon Blanc,P&G,Drink,Alcohol,Wine,kg,24.68,True,8,2019-07-05
+147,NP-SKU-00147,NorthPeak Own Brand Washing Powder,NorthPeak Own Brand,Household,Cleaning,Detergent,box,22.27,True,14,2020-06-02
+148,NP-SKU-00148,NorthPeak Own Brand Bleach Spray,NorthPeak Own Brand,Household,Cleaning,Bleach,pack,17.39,True,4,2018-09-20
+149,NP-SKU-00149,Danone Anti-Dandruff Shampoo,Kelloggs,Household,Personal Care,Shampoo,bag,6.08,True,1,2022-04-27
+150,NP-SKU-00150,Kelloggs Fruit 6pk,PepsiCo,Food,Fresh Produce,Fruit,kg,17.75,True,18,2022-07-22

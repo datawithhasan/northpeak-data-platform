@@ -198,6 +198,45 @@ CREATE INDEX idx_movements_date    ON stock_movements(movement_date);
 CREATE INDEX idx_movements_type    ON stock_movements(movement_type);
 
 -- ================================================================
+-- REWARDSCO LOYALTY TRANSACTIONS
+-- ================================================================
+CREATE TABLE IF NOT EXISTS rewardsco_loyalty_transactions (
+    transaction_id     SERIAL        PRIMARY KEY,
+    member_id          VARCHAR(50)   NOT NULL,   -- matches customers.loyalty_member_id; no FK (different system)
+    transaction_type   VARCHAR(20)   NOT NULL CHECK (transaction_type IN ('earn','redeem')),
+    points             INTEGER       NOT NULL,   -- sign convention: confirm earn/redeem direction before aggregating
+    basket_value_gbp   NUMERIC(10,2),             -- NULL expected for 'redeem' rows
+    store_id           INTEGER,                   -- NULL for online transactions; no FK (different system)
+    channel            VARCHAR(20)   NOT NULL CHECK (channel IN ('in_store','online','click_collect')),
+    sku                VARCHAR(50),                -- NULL expected for 'redeem' rows
+    transaction_at     TIMESTAMP     NOT NULL,
+    created_at         TIMESTAMP     DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Index: the single most common query — "this member's points history,
+-- in order" — covers both member-lookup alone AND member+date range,
+-- since the leading column (member_id) also serves a plain member-only
+-- filter. (No separate single-column member_id index — would be
+-- redundant next to this composite, same reasoning as idx_inventory_store.)
+CREATE INDEX idx_loyalty_member_date ON rewardsco_loyalty_transactions(member_id, transaction_at);
+
+-- Index: date-range queries across ALL members (monthly loyalty volume reporting)
+CREATE INDEX idx_loyalty_date ON rewardsco_loyalty_transactions(transaction_at);
+
+-- Index: filter earn vs redeem transactions
+CREATE INDEX idx_loyalty_type ON rewardsco_loyalty_transactions(transaction_type);
+
+-- Index: "loyalty transactions at this store" — store-level loyalty reporting
+CREATE INDEX idx_loyalty_store ON rewardsco_loyalty_transactions(store_id);
+
+-- Index: filter in_store / online / click_collect
+CREATE INDEX idx_loyalty_channel ON rewardsco_loyalty_transactions(channel);
+
+-- Index: "loyalty transactions tied to this product" — product-level loyalty analysis
+CREATE INDEX idx_loyalty_sku ON rewardsco_loyalty_transactions(sku);
+
+
+-- ================================================================
 -- KNOWN DATA QUALITY ISSUES (documented for Silver layer)
 -- ================================================================
 COMMENT ON COLUMN orders.customer_id IS
@@ -211,3 +250,15 @@ COMMENT ON COLUMN inventory.quantity_on_hand IS
 
 COMMENT ON COLUMN orders.payment_reference IS
     'May contain card data for pre-2021 records. Silver: SHA-256 mask before writing.';
+    
+COMMENT ON COLUMN rewardsco_loyalty_transactions.points IS
+    'Sign convention unconfirmed - verify earn rows are positive and redeem rows are negative before SUM(points) is used as a running balance.';
+
+COMMENT ON COLUMN rewardsco_loyalty_transactions.basket_value_gbp IS
+    'NULL for redeem transactions - expected business state, not missing data. Confirmed: 0 redeem rows have a non-null basket_value_gbp.';
+
+COMMENT ON COLUMN rewardsco_loyalty_transactions.sku IS
+    'NULL for redeem transactions - expected, same reasoning as basket_value_gbp.';
+
+COMMENT ON COLUMN rewardsco_loyalty_transactions.store_id IS
+    'NULL for online transactions (no physical store involved) - needs confirming this is the only reason it''s ever blank.';

@@ -47,3 +47,6 @@ quality/great_expectations/uncommitted/
 # OS
 .DS_Store
 Thumbs.db
+
+# Jupyter checkpoint files (local only)
+.ipynb_checkpoints/
